@@ -4,8 +4,11 @@ export const mainMenu = [
     label: "Components",
     url: "/components",
     subMenu: [
-      { label: "Button", url: "/components/button" },
+      { label: "Pagination", url: "/components/pagination" },
+      { label: "Pagination Input", url: "/components/pagination-input" },
       { label: "Tiptap", url: "/components/tiptap" },
+      { label: "Multiselect", url: "/components/multiselect" },
+      { label: "Code Block Copy", url: "/components/code-block-copy" },
     ],
   },
   {
@@ -13,7 +16,24 @@ export const mainMenu = [
     url: "/public-api",
     subMenu: [
       { label: "Jsonplaceholder", url: "/public-api/jsonplaceholder" },
-      { label: "Reqres", url: "/public-api/reqres" },
+      { label: "Youtube", url: "/public-api/youtube" },
+    ],
+  },
+  {
+    label: "Animation",
+    url: "/animation",
+    subMenu: [
+      { label: "Scrollmagic", url: "/animation/scrollmagic" },
+      { label: "lainnya", url: "/lainnya" },
+    ],
+  },
+  {
+    label: "Other",
+    url: "/other",
+    subMenu: [
+      { label: "Sticky", url: "/other/sticky" },
+      { label: "Ts2", url: "/other/ts2" },
+      { label: "Ts3", url: "/other/ts3" },
     ],
   },
 ];
