@@ -11,7 +11,7 @@ export default function SidebarMobile() {
   if (menu.length === 0) return null;
 
   return (
-    <div className="md:hidden flex items-start gap-2">
+    <div className="md:hidden flex gap-2">
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button variant={"ghost"} size={"icon"}>
@@ -19,7 +19,7 @@ export default function SidebarMobile() {
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent align="start" className="md:hidden">
-          <div className="px-">
+          <div className="">
             {menu.map((item, i) => (
               <DropdownMenuItem key={i} asChild>
                 <Button variant={"ghost"} asChild className="block">
@@ -30,7 +30,7 @@ export default function SidebarMobile() {
           </div>
         </DropdownMenuContent>
       </DropdownMenu>
-      <h1 className="h1 self-center">{title}</h1>
+      <h1 className="h1 mt-1">{title}</h1>
     </div>
   );
 }
